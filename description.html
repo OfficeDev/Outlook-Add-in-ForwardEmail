@@ -1,0 +1,288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,0:ImageSprite,0:Header.NonMtps,1:LinkList;/Areas/Centers/Themes/Msdn/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=7A770956F95829094E6B437F2E15F78D" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/f1ba9241-fa93-41f3-bce3-a025e0ba4044Combined.css,0:ImageSprite,0:Footer.NonMtps,1:LinkList;/Areas/Centers/Themes/Msdn/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=091859E5A4DB58EB5F31FB2CDF7DABDE" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Mail apps for Outlook: Outlook Email Forwarder App</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>Mail apps for Outlook: Outlook Email Forwarder App</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            Outlook Web App, Outlook 2013, apps for Office
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            mail app
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Last updated</label>
+                    <div id="LastUpdated">8/28/2013</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">Apache License, Version 2.0</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/Outlook-Email-Forwarder-App-650a5b41">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<div id="header">
+<table id="bottomTable" cellspacing="0" cellpadding="0">
+<tbody>
+<tr id="headerTableRow1">
+<td align="left"></td>
+</tr>
+<tr id="headerTableRow2">
+<td align="left"><span id="nsrTitle">Apps for Office: Outlook email forwarder app</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="mainSection">
+<div id="mainBody">
+<p>&nbsp;</p>
+<div>
+<p><span>Summary:</span> This sample app shows how to use JavaScript and Exchange Web Services in a mail app for Outlook to forward the current mail items to a list of user-defined email addresses, and optionally to include user-defined comments with the forwarded
+ email.</p>
+</div>
+<div>
+<h1>Description of the sample</h1>
+<div id="sectionSection0">
+<p>Figure 1 shows the sample mail app available in the app bar of the user's email in Outlook Web Access.</p>
+<strong>
+<div class="caption">Figure 1. The sample mail app in the app bar.</div>
+</strong><br>
+<img src="description/c3d5f40e-654f-493c-892d-73cc8f18b458image.png" alt="">
+<p>When the user chooses the mail app in the app bar, the full user interface for the app expands into view. The user can then type email addresses separated by semicolons in the space provided, and optionally any comments they want to send with the forwarded
+ email.</p>
+<p>Finally, when the user chooses the <strong><span class="ui">Go!</span></strong> Button in the app user interface, JavaScript code forwards the email to each of the addresses that the user enters, and includes any comments from the Comments text box with
+ the forwarded email. The user interface for the app then shows a message indicating the success or failure of the operation.</p>
+</div>
+<h1>Prerequisites</h1>
+<div id="sectionSection1">
+<p>This sample requires:</p>
+<ul>
+<li>
+<p>Visual Studio 2012 (RTM).</p>
+</li><li>
+<p>Office 2013 tools for Visual Studio 2012 (RTM).</p>
+</li><li>
+<p>Either access to an Office 365 Developer Site (highly recommended) or a local installation of Exchange Server 2013.</p>
+</li></ul>
+</div>
+<h1>Key components of the sample</h1>
+<div id="sectionSection2">
+<p>The sample app contains:</p>
+<ul>
+<li>
+<p>The OutlookEmailForwarder project, which contains:</p>
+<ul>
+<li>
+<p>The OutlookEmailForwarder.xml manifest file.</p>
+</li></ul>
+</li><li>
+<p>The OutlookEmailForwarderWeb project, which contains multiple template files. However, files that have been developed as part of this sample solution include:</p>
+<ul>
+<li>
+<p>OutlookEmailForwarder.html (in the Pages folder). This contains the HTML user interface that is displayed in the task pane. It consists of simple HTML, two text input controls, and a button input control.</p>
+</li><li>
+<p>OutlookEmailForwarder.js (in the Scripts folder). This script file contains code that runs when the app is loaded.</p>
+</li></ul>
+</li></ul>
+<p>All other files are automatically provided by the Visual Studio project template for apps for Office, and they have not been modified in the development of this sample app.</p>
+</div>
+<h1>Configure the sample</h1>
+<div id="sectionSection3">
+<p>To test the sample, sign up for an Office 365 Developer site, and then send at least one email to an email account that you have configured there before running this sample. Alternatively, you can set up a local installation of Exchange Server 2013 and ensure
+ that at least one mailbox has been configured for you, and then send at least one email to that account before running this sample. No other configuration is necessary.</p>
+</div>
+<h1>Build the sample</h1>
+<div id="sectionSection4">
+<p>Choose the Ctrl&#43;Shift&#43;B keys to build the solution.</p>
+</div>
+<h1>Run and test the sample</h1>
+<div id="sectionSection5">
+<p>&nbsp;</p>
+<div>
+<ol>
+<li>
+<p>Choose the F5 key to run the app. The following dialog box appears.</p>
+<strong>
+<div class="caption">Figure 4. Connect to Exchange email account dialog box</div>
+</strong><br>
+<img src="description/image.png" alt=""> </li><li>
+<p>Enter your Office 365 Developer site credentials, and then choose the <strong>
+<span class="ui">Connect</span></strong> button to enable the app to automatically discover the Exchange Web Services URL and the Outlook Web Access URL that it will need to deploy and run the sample.</p>
+</li><li>
+<p>You may then be prompted to log on to Outlook Web Access for your Office 365 Developer site. If so, enter the same credentials that you used in Step 2.</p>
+</li><li>
+<p>You can then follow the steps discussed at the beginning of this document to see the app in action.</p>
+</li></ol>
+</div>
+</div>
+<h1>Troubleshooting</h1>
+<div id="sectionSection6">
+<p>If you are attempting to use a local installation of Exchange Server, ask an Exchange administrator to ensure that Exchange Server 2013 is configured correctly. It is recommended that you sign up for an Office 365 Developer site to test this sample, as a
+ local installation of Exchange Server 2013 can be complex and time-consuming to set up.</p>
+</div>
+<h1>Change log</h1>
+<div id="sectionSection7">
+<p>First release: April 15, 2013.</p>
+</div>
+<h1>Related content</h1>
+<div id="sectionSection8">
+<ul>
+<li>
+<p><a href="http://msdn.microsoft.com/en-us/library/office/jj220060.aspx" >Build apps for Office</a></p>
+</li><li>
+<p><a href="http://msdn.microsoft.com/en-us/library/office/fp161135.aspx" >Mail apps for Outlook</a></p>
+</li><li>
+<p><a href="http://msdn.microsoft.com/en-us/library/fp179924.aspx" >Sign up for an Office 365 Developer Site</a></p>
+</li></ul>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+    </div>
+</body>
+</html>

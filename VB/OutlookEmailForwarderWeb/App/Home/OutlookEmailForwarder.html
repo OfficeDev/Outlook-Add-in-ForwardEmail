@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title></title>
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+
+    <link href="../../Content/Office.css" rel="stylesheet" type="text/css" />
+    <script src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
+
+    <!-- To enable offline debugging using a local reference to Office.js, use:                        -->
+    <!--    <script src="../../Scripts/Office/MicrosoftAjax.js" type="text/javascript"></script>       -->
+
+    <link href="../App.css" rel="stylesheet" type="text/css" />
+    <script src="../App.js" type="text/javascript"></script>
+
+    <link href="OutlookEmailForwarder.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../../Content/fabric.min.css">
+    <link rel="stylesheet" href="../../Content/fabric.components.min.css">
+
+    <script src="OutlookEmailForwarder.js" type="text/javascript"></script>
+</head>
+<body>
+    <!-- Page content -->
+    <div id="content-main">
+        <div class="padding">
+            <h3>Email Forwarder Sample</h3>
+
+            <div style="float:left;width:10%;">
+                To:&nbsp;
+            </div>
+            <div style="float:left;width:90%">
+                <input id="groupEmails" type="text" title="Enter addresses separated by semi-colons"/>
+            </div>
+            <div style="float:left;width:10%;">
+                Comment:&nbsp;
+            </div>
+            <div style="float:left;width:90%">
+                <input id="groupComment" type="text" title="Enter your message to be forwarded with the orginal"/>
+            </div>
+        </div>
+        <input id="fowardToGroups" type="button" value="Go!" />
+
+    </div>
+    <div id="content-footer">
+        <div class="padding">
+            <a target="_blank" href="http://go.microsoft.com/fwlink/?LinkId=276814">Find more samples online...</a>
+        </div>
+    </div>
+</body>
+</html>
