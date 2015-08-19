@@ -94,10 +94,6 @@
     <Content Include="Images\Close.png" />
     <Content Include="packages.config" />
     <None Include="My Project\PublishProfiles\WhoAD.pubxml" />
-    <None Include="Scripts\jquery-2.1.4.intellisense.js" />
-    <Content Include="Scripts\jquery-2.1.4.js" />
-    <Content Include="Scripts\jquery-2.1.4.min.js" />
-    <Content Include="Scripts\jquery-2.1.4.min.map" />
     <None Include="Scripts\Office\1.0\outlook-15.debug-vsdoc.js" />
     <None Include="Scripts\Office\1.0\office-vsdoc.js" />
     <Content Include="Scripts\Office\1.0\ar-sa\office_strings.debug.js" />
@@ -331,7 +327,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Fonts\" />
+    <Folder Include="fonts\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
