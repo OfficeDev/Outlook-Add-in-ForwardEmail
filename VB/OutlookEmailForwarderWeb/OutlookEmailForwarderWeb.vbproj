@@ -91,8 +91,12 @@
     <Content Include="Content\fabric.components.min.css" />
     <Content Include="Content\fabric.min.css" />
     <Content Include="Content\Office.css" />
+    <Content Include="fonts\office365icons.svg" />
     <Content Include="Images\Close.png" />
     <Content Include="packages.config" />
+    <Content Include="fonts\office365icons.eot" />
+    <Content Include="fonts\office365icons.ttf" />
+    <Content Include="fonts\office365icons.woff" />
     <None Include="My Project\PublishProfiles\WhoAD.pubxml" />
     <None Include="Scripts\Office\1.0\outlook-15.debug-vsdoc.js" />
     <None Include="Scripts\Office\1.0\office-vsdoc.js" />
@@ -326,9 +330,7 @@
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="fonts\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
