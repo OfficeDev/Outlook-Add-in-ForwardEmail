@@ -4,7 +4,7 @@ This sample app shows how to use JavaScript and Exchange Web Services in a mail 
 **Description of the sample**
 Figure 1 shows the sample mail app available in the app bar of the user's email in Outlook Web Access.
 
-![Figure 1. The sample mail app in the app bar.](/description/c3d5f40e-654f-493c-892d-73cc8f18b458image.png)
+![Figure 1. The sample mail app in the app bar.](/description/c3d5f40e-654f-493c-892d-73cc8f18b458image.jpg)
 
 
 When the user chooses the mail app in the app bar, the full user interface for the app expands into view. The user can then type email addresses separated by semicolons in the space provided, and optionally any comments they want to send with the forwarded email.
@@ -43,7 +43,7 @@ Choose the Ctrl+Shift+B keys to build the solution.
 **Run and test the sample**
 
 1. Choose the F5 key to run the app. The following dialog box appears.
-![Figure 4. Connect to Exchange email account dialog box](/description/image.png)
+![Figure 4. Connect to Exchange email account dialog box](/description/image.jpg)
 
 
 2. Enter your Office 365 Developer site credentials, and then choose the Connect button to enable the app to automatically discover the Exchange Web Services URL and the Outlook Web Access URL that it will need to deploy and run the sample.
@@ -61,6 +61,7 @@ If you are attempting to use a local installation of Exchange Server, ask an Exc
 
 **Related content**
 
+* [More Add-in samples](https://github.com/OfficeDev?utf8=%E2%9C%93&query=-Add-in)
 * [Build apps for Office](http://msdn.microsoft.com/library/office/jj220060.aspx)
 * [Mail apps for Outlook](http://msdn.microsoft.com/library/office/fp161135.aspx)
 * [Sign up for an Office 365 Developer Site](http://msdn.microsoft.com/library/fp179924.aspx)
