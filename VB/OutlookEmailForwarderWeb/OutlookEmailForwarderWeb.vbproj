@@ -88,8 +88,6 @@
     <Content Include="App\Home\OutlookEmailForwarder.css" />
     <Content Include="App\Home\OutlookEmailForwarder.html" />
     <Content Include="App\Home\OutlookEmailForwarder.js" />
-    <Content Include="Content\fabric.components.min.css" />
-    <Content Include="Content\fabric.min.css" />
     <Content Include="fonts\office365icons.svg" />
     <Content Include="Images\Close.png" />
     <Content Include="packages.config" />
@@ -329,7 +327,9 @@
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Content\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
