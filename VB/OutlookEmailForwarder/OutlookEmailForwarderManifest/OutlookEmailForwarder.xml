@@ -18,7 +18,7 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://localhost/OutlookEmailForwarder/app/home/OutlookEmailForwarder.html" />
+        <SourceLocation DefaultValue="~remoteAppUrl/App/Home/OutlookEmailForwarder.html" />
         <RequestedHeight>250</RequestedHeight>
       </DesktopSettings>
     </Form>
