@@ -18,7 +18,7 @@ This sample requires:
 
 * Visual Studio 2012 (RTM).
 * Office 2013 tools for Visual Studio 2012 (RTM).
-* Either access to an Office 365 Developer Site (highly recommended) or a local installation of Exchange Server 2013.
+* Either access to an Office 365 Developer Site (highly recommended) or a local installation of Exchange Server 2013. You can [join the Office 365 Developer Program and get a free 1 year subscription to Office 365](https://aka.ms/devprogramsignup).
 
 **Key components of the sample**
 
