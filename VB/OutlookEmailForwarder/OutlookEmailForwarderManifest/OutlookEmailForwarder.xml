@@ -1,12 +1,16 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--Created:cb85b80c-f585-40ff-8bfc-12ff4d0e34a9-->
-<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="MailApp">
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" 
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+           xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+           xsi:type="MailApp">
   <Id>2d0475b0-7ef3-44a6-817c-78d71c7097cc</Id>
   <Version>1.0.0.0</Version>
-  <ProviderName>Microsoft IT</ProviderName>
+  <ProviderName>Microsoft</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="OutlookEmailForwarder" />
-  <Description DefaultValue="OutlookEmailForwarder Description"/>
+  <Description DefaultValue="Forward mail items to a list of user-defined email addresses with comments."/>
+  <IconUrl DefaultValue="https://appcommandicons.blob.core.windows.net/images/taskpane_32x.png" />
   <Hosts>
     <Host Name="Mailbox" />
   </Hosts>
@@ -27,4 +31,68 @@
     <Rule xsi:type="RuleCollection" Mode="Or">
       <Rule xsi:type="ItemIs" ItemType="Message" FormType="ReadOrEdit"/>
     </Rule>
+  <DisableEntityHighlighting>false</DisableEntityHighlighting>
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/mailappversionoverrides" xsi:type="VersionOverridesV1_0">
+
+    <Requirements>
+      <bt:Sets DefaultMinVersion="1.3">
+        <bt:Set Name="Mailbox" />
+      </bt:Sets>
+    </Requirements>
+    <Hosts>
+      <Host xsi:type="MailHost">
+
+        <DesktopFormFactor>
+          <FunctionFile resid="functionFile" />
+          <!-- Message read form -->
+          <ExtensionPoint xsi:type="MessageReadCommandSurface">
+            <OfficeTab id="TabDefault">
+              <Group id="msgReadDemoGroup">
+                <Label resid="groupLabel" />
+                <!-- Task pane button -->
+                <Control xsi:type="Button" id="msgReadOpenPaneButton">
+                  <Label resid="paneReadButtonLabel" />
+                  <Supertip>
+                    <Title resid="paneReadSuperTipTitle" />
+                    <Description resid="paneReadSuperTipDescription" />
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="green-icon-16" />
+                    <bt:Image size="32" resid="green-icon-32" />
+                    <bt:Image size="80" resid="green-icon-80" />
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <SourceLocation resid="readTaskPaneUrl" />
+                  </Action>
+                </Control>
+              </Group>
+            </OfficeTab>
+          </ExtensionPoint>
+        </DesktopFormFactor>
+      </Host>
+    </Hosts>
+
+    <Resources>
+      <bt:Images>
+        <!-- Green icon -->
+        <bt:Image id="green-icon-16" DefaultValue="https://appcommandicons.blob.core.windows.net/images/taskpane_16x.png" />
+        <bt:Image id="green-icon-32" DefaultValue="https://appcommandicons.blob.core.windows.net/images/taskpane_32x.png" />
+        <bt:Image id="green-icon-80" DefaultValue="https://appcommandicons.blob.core.windows.net/images/taskpane_80x.png" />
+      </bt:Images>
+      <bt:Urls>
+        <bt:Url id="readTaskPaneUrl" DefaultValue="~remoteAppUrl/App/Home/OutlookEmailForwarder.html" />
+      </bt:Urls>
+      <bt:ShortStrings>
+        <bt:String id="groupLabel" DefaultValue="Outlook Add-in Sample" />
+
+        <!-- Read mode -->
+        <bt:String id="paneReadButtonLabel" DefaultValue="Forward Email" />
+        <bt:String id="paneReadSuperTipTitle" DefaultValue="Forward mail items to a list of user-defined email addresses with comments." />
+      </bt:ShortStrings>
+      <bt:LongStrings>
+        <!-- Read mode -->
+        <bt:String id="paneReadSuperTipDescription" DefaultValue="Your add-in loaded successfully. Click here to forward email with comments." />
+      </bt:LongStrings>
+    </Resources>
+  </VersionOverrides>
 </OfficeApp>
