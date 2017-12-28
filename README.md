@@ -65,3 +65,6 @@ If you are attempting to use a local installation of Exchange Server, ask an Exc
 * [Build apps for Office](http://msdn.microsoft.com/library/office/jj220060.aspx)
 * [Mail apps for Outlook](http://msdn.microsoft.com/library/office/fp161135.aspx)
 * [Sign up for an Office 365 Developer Site](http://msdn.microsoft.com/library/fp179924.aspx)
+
+
+This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information, see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
