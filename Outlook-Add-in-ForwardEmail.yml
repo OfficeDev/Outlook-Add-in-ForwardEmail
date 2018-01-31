@@ -1,0 +1,20 @@
+### YamlMime:Sample
+sample:
+- name: 'Outlook add-in: ForwardEmail'
+  path: ''
+  description: This sample app shows how to use JavaScript and Exchange Web Services in a mail app for Outlook to forward the current mail items to a list of user-defined email addresses, and optionally to include user-defined comments with the forwarded email.
+  readme: ''
+  generateZip: FALSE
+  isLive: TRUE
+  technologies:
+  - Office Add-in
+  - Azure AD
+  azureDeploy: ''
+  author: jamescro
+  platforms: []
+  languages:
+  - JavaScript
+  extensions:
+    products:
+    - Outlook
+    scenarios: []
