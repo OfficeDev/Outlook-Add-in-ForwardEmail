@@ -1,3 +1,16 @@
+---
+topic: sample
+products:
+- Outlook
+- Office 365
+languages:
+- JavaScript
+extensions:
+  contentType: samples
+  technologies:
+  - Add-ins
+  createdDate: 8/18/2015 3:24:21 PM
+---
 # Outlook-Add-in-ForwardEmail
 This sample app shows how to use JavaScript and Exchange Web Services in a mail app for Outlook to forward the current mail items to a list of user-defined email addresses, and optionally to include user-defined comments with the forwarded email.
 
