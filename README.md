@@ -1,11 +1,26 @@
-# Outlook add-in: ForwardEmail
-This sample app shows how to use JavaScript and Exchange Web Services in a mail app for Outlook in Office 365 to forward the current mail items to a list of user-defined email addresses, and optionally to include user-defined comments with the forwarded email.
+---
+page_type: sample
+products:
+- office-outlook
+- office-365
+languages:
+- javascript
+extensions:
+  contentType: samples
+  technologies:
+  - Add-ins
+  createdDate: 8/18/2015 3:24:21 PM
+---
+
+# Outlook-Add-in-ForwardEmail
+
+This sample app shows how to use JavaScript and Exchange Web Services in a mail app for Outlook to forward the current mail items to a list of user-defined email addresses, and optionally to include user-defined comments with the forwarded email.
 
 ## Description of the sample
+
 The following illustration shows the sample mail app available in the app bar of the user's email in Outlook.
 
 ![Figure 1. The sample mail app in the app bar.](/description/c3d5f40e-654f-493c-892d-73cc8f18b458image.jpg)
-
 
 When the user chooses the mail app in the app bar, the full user interface for the app expands into view. The user can then type email addresses separated by semicolons in the space provided, and optionally any comments they want to send with the forwarded email.
 
@@ -42,6 +57,7 @@ Press Ctrl+Shift+B to build the solution.
 ## Run and test the sample
 
 1. Pres **F5** to run the app. The following dialog box appears.
+
 ![Figure 4. Connect to Exchange email account dialog box](/description/image.jpg)
 
 2. Enter your Office 365 Developer site credentials, and then choose the Connect button to enable the app to automatically discover the Exchange Web Services URL and the Outlook Web Access URL that it will need to deploy and run the sample.
